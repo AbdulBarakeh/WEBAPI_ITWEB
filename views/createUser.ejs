@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="/createUser/created" method="POST">
+        <label for="username"> name:</label>
+        <input type="text" name="username">
+        <label for="userage"> age:</label>
+        <input type="number" name="userage">
+        <label for="userheight"> height in cm:</label>
+        <input type="number" name="userheight">
+        <input type="submit" value="Create">
+    </form>
+  </body>
+</html>
